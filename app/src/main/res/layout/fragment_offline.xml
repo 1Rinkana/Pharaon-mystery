@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/five_hundred"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/five_error"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/offline_text"
+        android:layout_marginTop="185dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/five_hundred" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:src="@drawable/round_btn"
+        android:id="@+id/tryBtn"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:src="@drawable/try_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tryBtn"
+        app:layout_constraintEnd_toEndOf="@+id/tryBtn"
+        app:layout_constraintStart_toStartOf="@+id/tryBtn"
+        app:layout_constraintTop_toTopOf="@+id/tryBtn"/>
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:src="@drawable/main_bt"
+        android:id="@+id/play_offline"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play_offline"
+        app:layout_constraintBottom_toBottomOf="@+id/play_offline"
+        app:layout_constraintEnd_toEndOf="@+id/play_offline"
+        app:layout_constraintStart_toStartOf="@+id/play_offline"
+        app:layout_constraintTop_toTopOf="@+id/play_offline"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

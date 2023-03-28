@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="1dp">
+
+    <FrameLayout
+        android:id="@+id/cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:viewBindingIgnore="true">
+
+        <ImageView
+            android:id="@+id/cell_colour"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/cell" />
+
+        <ImageView
+            android:id="@+id/cell_num"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/one"
+            app:layout_constraintBottom_toBottomOf="@+id/cell_colour"
+            app:layout_constraintEnd_toEndOf="@+id/cell_colour"
+            app:layout_constraintStart_toStartOf="@+id/cell_colour"
+            app:layout_constraintTop_toTopOf="@+id/cell_colour" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
